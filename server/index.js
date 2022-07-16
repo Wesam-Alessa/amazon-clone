@@ -9,9 +9,9 @@ const productRouter = require("./routes/product");
 const userRouter = require("./routes/user");
 
 // init
-const PORT = 3000;
+const PORT =process.env.PORT || 3000;
 const app = express();
-const DB = "mongodb+srv://wesam:wesam@cluster0.ti1mr.mongodb.net/?retryWrites=true&w=majority";
+const DB = "YOUR CLUSTER URI";
  
 // middleware
 app.use(express.json());
